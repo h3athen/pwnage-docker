@@ -15,3 +15,6 @@ RUN apt-get update && apt-get install -y \
     tmux \
     sudo \
     && apt-get clean
+
+# Install pwntools
+RUN python3 -m pip install --upgrade pip && python3 -m pip install --upgrade pwntools
